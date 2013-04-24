@@ -1,5 +1,5 @@
 %% startup.m Matlab startup file
-%  Author:   Sebastian Eicke
+%  Author:   Sebastian Eicke (sebastianeicke@web.de)
 %  Date:     24. April 2013
 %  Version:  13.04.24.19
 %
@@ -21,7 +21,9 @@ if ismac
 	if strcmp(macName, 'seiMac.local')		% iMac
         homeDir = '/Users/seicke/Dropbox/Code/Matlab/';
     end
-    addpath(homedir);
+    addpath(genpath(homeDir));
+    rmpath(fullfile(homeDir, 'tests'));
+    rmpath(genpath(fullfile(homeDir, '.git')));
 end
 
 if ispc

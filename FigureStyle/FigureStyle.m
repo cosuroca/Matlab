@@ -14,6 +14,7 @@
 %               Style guide is loaded from figureStyle.mat (must be in the system path)
 %
 % (based upon FigureStyle.m from Volker Dieckmann)
+%
 %% Requirements
 % FigureStyle.mat
 % eps2pdf.m by Primoz Cermelj
