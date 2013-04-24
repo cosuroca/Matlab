@@ -1,4 +1,4 @@
-%% KonzPYSO.m
+%% concPYSO.m
 %
 %  Author:   Sebastian Eicke (sebastianeicke@web.de)
 %  Date:     14. February 2012
@@ -15,7 +15,7 @@
 %    dc   concentration error
 %
 %% Code
-function [ ] = KonzPYSO( m, V )
+function [ ] = concPYSO( m, V )
 
 M = 886.64;       % molar mass of [Ru(bpy)_2(pySO)](PF_6)_2 (g/mol)
 deltam = 0.1;   % (mg)

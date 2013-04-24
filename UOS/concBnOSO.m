@@ -1,4 +1,4 @@
-%% KonzBnOSO.m
+%% concBnOSO.m
 %
 %  Author:   Sebastian Eicke (sebastianeicke@web.de)
 %  Date:     23. February 2010
@@ -15,7 +15,7 @@
 %    dc   concentration error
 %
 %% Code
-function [ ] = KonzBnOSO( m, V )
+function [ ] = concBnOSO( m, V )
 
 M=817.7;        % molar mass of [Ru(bpy)_2(BnOSO)]PF_6 (g/mol)
 deltam = 0.1;   % (mg)

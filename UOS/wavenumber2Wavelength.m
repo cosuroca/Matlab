@@ -1,4 +1,4 @@
-%% Wavelength2Wavenumber.m
+%% wavelength2Wavenumber.m
 %
 %  Author:   Sebastian Eicke (sebastianeicke@web.de)
 %  Date:     16. July 2011
@@ -11,6 +11,6 @@
 %    lambda  Wavelength (nm)
 %
 %% Code
-function [lambda] = Wavenumber2Wavelength(nu)
+function [lambda] = wavenumber2Wavelength(nu)
 
 lambda = 1./(nu.*1e-9.*100);

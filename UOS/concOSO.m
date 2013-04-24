@@ -1,4 +1,4 @@
-%% KonzOSO.m
+%% concOSO.m
 %
 %  Author:   Sebastian Eicke (sebastianeicke@web.de)
 %  Date:     06. August 2010
@@ -15,7 +15,7 @@
 %    dc   concentration error
 %
 %% Code
-function [ ] = KonzOSO( m, V )
+function [ ] = concOSO( m, V )
 
 M=741.61;       % molar mass of [Ru(bpy)_2(OSO)]PF_6 (g/mol)
 deltam = 0.1;   % (mg)
@@ -34,7 +34,7 @@ c=m/(M*V);
 deltac=1/(M*V)*deltam+m/(M*V^2)*deltaV;
 
 disp(char(strcat({'Lösungskonzentration: '},num2str(c*1000,4),' mmol/l')));
-disp(char(strcat({'Fehler Lösungskonzentration: '},num2str(deltac*1000,3),' mmol/l')));
+disp(char(strcat({'Fehler Lösungsconcentration: '},num2str(deltac*1000,3),' mmol/l')));
 disp(' ');
 disp(char(strcat({'( '},num2str(c*1000,5),{' +- '},num2str(deltac*1000,5),{' ) mmol/l'})));
 

@@ -1,4 +1,4 @@
-%% RGB2MatlabColor.m
+%% rgb2MatlabColor.m
 %
 %  Author:   Sebastian Eicke (sebastianeicke@web.de)
 %  Date:     22. February 2010
@@ -7,7 +7,7 @@
 %  Description: Convert RGB colors (values from 0 to 255) to Matlab RGB colors (from 0to 1)
 %
 %% Code
-function [matlabColor] = RGB2MatlabColor(R,G,B)
+function [matlabColor] = rgb2MatlabColor(R,G,B)
 
 if nargin == 1
     color = R;

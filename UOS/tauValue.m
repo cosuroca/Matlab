@@ -1,4 +1,4 @@
-%% Pt100.m
+%% tauValue.m
 %
 %  Author:   Sebastian Eicke (sebastianeicke@web.de)
 %  Date:     10. October 2009
@@ -16,7 +16,7 @@
 %    tau    tau value (s)
 %
 %% Code
-function [ tau ] = TauValue( EA, Z, T )
+function [ tau ] = tauValue( EA, Z, T )
 
 kb=8.617343e-5; % Boltzmann constant (eV/K)
 tau=1/Z.*exp(EA./(kb.*(T)));

@@ -1,4 +1,4 @@
-%% PtX.m
+%% ptX.m
 %
 %  Author:   Sebastian Eicke (sebastianeicke@web.de)
 %  Date:     13. April 2010
@@ -10,12 +10,8 @@
 %    R   resistance of a PtX element (ohm)
 %    RO  X=100 or 1000, addicted to the PtX element
 %
-%% Output:
-%    c    concentration of the solution (mol/l)
-%    dc   concentration error
-%
 %% Code
-function [T] = PtX(R, R0)
+function [T] = ptX(R, R0)
 
 if R>R0
     A = 3.9083E-3;  % 1/°C

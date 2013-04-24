@@ -1,4 +1,4 @@
-%% KonzOSOSugar.m
+%% concOSOSugar.m
 %
 %  Author:   Sebastian Eicke (sebastianeicke@web.de)
 %  Date:     27. May 2011
@@ -16,7 +16,7 @@
 %    dc   concentration error
 %
 %% Code
-function [ ] = KonzOSOSugar( m, m_trehalose, m_sugar )
+function [ ] = concOSOSugar( m, m_trehalose, m_sugar )
 
 M = 741.61;     % molar mass of [Ru(bpy)_2(OSO)]PF_6 (g/mol)
 deltam = 0.1;   % (mg)
@@ -47,7 +47,7 @@ dc = 1/(M*V)*dm + ...
      m * (rho_sugar*1000)^2 * rho_trehalose*1000 / (M*(m_sugar*rho_trehalose*1000+m_trehalose*rho_sugar*1000)^2)*dm;
 
 disp(char(strcat({'Lösungskonzentration: '},num2str(c*1000,4),' mmol/l')));
-disp(char(strcat({'Fehler Lösungskonzentration: '},num2str(dc*1000,3),' mmol/l')));
+disp(char(strcat({'Fehler Lösungsconcentration: '},num2str(dc*1000,3),' mmol/l')));
 disp(' ');
 disp(char(strcat({'( '},num2str(c*1000,5),{' +- '},num2str(dc*1000,5),{' ) mmol/l'})));
 

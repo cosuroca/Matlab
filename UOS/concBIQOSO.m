@@ -1,4 +1,4 @@
-%% KonzBIQOSO.m
+%% concBIQOSO.m
 %
 %  Author:   Sebastian Eicke (sebastianeicke@web.de)
 %  Date:     28. July 2011
@@ -17,7 +17,7 @@
 %    dc   concentration error
 %
 %% Code
-function [ ] = KonzBIQOSO( m, V )
+function [ ] = concBIQOSO( m, V )
 
 M=841.72;       % molar mass of [Ru(biq)(bpy)(OSO)]PF_6 (g/mol)
 deltam = 0.1;   % (mg)
