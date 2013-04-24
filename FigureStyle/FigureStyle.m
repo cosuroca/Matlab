@@ -23,9 +23,9 @@
 %  (http://www.mathworks.com/matlabcentral/fileexchange/17928-fixpslinestyle)
 %
 %% Input for constructor
-% figureHandle handle for figure to be styled
-% language     (optional) 'en' default, possible: 'de'
-% verbose      (optional) verbose commands read or written on serial port
+%    figureHandle handle for figure to be styled
+%    language     (optional) 'en' default, possible: 'de'
+%    verbose      (optional) verbose commands read or written on serial port
 %
 %% Code
 classdef FigureStyle < handle

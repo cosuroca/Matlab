@@ -4,12 +4,10 @@
 %  Date:     06. August 2010
 %  Version:  10.08.06.10
 %
-%  Description: Calculate the concentration of a [Ru(bpy)(biq)(OSO)]PF_6 solution
-%               [Ru(N_2C_10H_8)(N_2C_18H_12)(SOCH_3)(C_6H_4CO_2)]PF_6
-%               [Ru N_4 C_36 H_27 SO_3 PF_6
+%  Description: Calculate the concentration of a [Ru(bpy)_2(OSO)]PF_6 solution
 %
 %% Input
-%	 m    mass of [Ru(bpy)(biq)(OSO)]PF_6 pulver (mg)
+%	 m    mass of [Ru(bpy)_2(OSO)]PF_6 pulver (mg)
 %	 V    volume of solvent (ml)
 %
 %% Output:
