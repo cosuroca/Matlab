@@ -1,6 +1,6 @@
 %% fotometerTest.m
 %
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
 %  Date:     26.04.2013
 %  Version:  2013.04.26.15
 %

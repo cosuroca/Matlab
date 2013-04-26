@@ -1,7 +1,7 @@
 %% FigureStyle.m Applies a style guide to the given figure.
 %  This file is part of FigureStyle.
 %
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
 %  Date:     17. April 2012
 %  Version:  12.04.17.14
 %

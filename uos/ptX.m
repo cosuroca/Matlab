@@ -1,6 +1,6 @@
 %% ptX.m
 %
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
 %  Date:     13. April 2010
 %  Version:  10.04.13.12
 %

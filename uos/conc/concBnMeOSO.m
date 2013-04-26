@@ -1,13 +1,13 @@
-%% concPYSO.m
+%% concBnMeOSO.m
 %
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
-%  Date:     14. February 2012
-%  Version:  12.02.14.10
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
+%  Date:     23. February 2010
+%  Version:  10.02.23.13
 %
-%  Description: Calculate the concentration of a [Ru(bpy)_2(pySO)](PF_6)_2 solution
+%  Description: Calculate the concentration of a [Ru(bpy)_2(BnMeOSO)]PF_6 solution
 %
 %% Input
-%	 m    mass of [Ru(bpy)_2(pySO)](PF_6)_2 pulver (mg)
+%	 m    mass of [Ru(bpy)_2(BnMeOSO)]PF_6 pulver (mg)
 %	 V    volume of solvent (ml)
 %
 %% Output:
@@ -15,13 +15,13 @@
 %    dc   concentration error
 %
 %% Code
-function [ ] = concPYSO( m, V )
+function [ ] = concBnMeOSO( m, V )
 
-M = 886.64;       % molar mass of [Ru(bpy)_2(pySO)](PF_6)_2 (g/mol)
+M=831.7;        % molar mass of [Ru(bpy)_2(BnMeOSO)]PF_6 (g/mol)
 deltam = 0.1;   % (mg)
 deltaV = 0.1;   % (ml)
 
-disp(char(strcat({'Masse an [Ru(bpy)_2(pySO)](PF_6)_2 Pulver: '},num2str(m,2),' mg')));
+disp(char(strcat({'Masse an [Ru(bpy)_2(OSO)]PF_6 Pulver: '},num2str(m,2),' mg')));
 disp(char(strcat({'Volumen an Lösungsmittel: '},num2str(V,2),' ml')));
 disp(' ');
 

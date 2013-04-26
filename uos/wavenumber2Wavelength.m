@@ -1,6 +1,6 @@
 %% wavelength2Wavenumber.m
 %
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
 %  Date:     16. July 2011
 %  Version:  11.07.16.11
 %

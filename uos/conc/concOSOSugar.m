@@ -1,6 +1,6 @@
 %% concOSOSugar.m
 %
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
 %  Date:     27. May 2011
 %  Version:  11.05.26.15
 %

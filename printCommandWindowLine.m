@@ -1,5 +1,6 @@
 %% printCommandWindowLine.m Print line in Command Window
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
+%
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
 %  Date:     28. January 2012
 %  Version:  12.01.28.16
 %

@@ -1,6 +1,6 @@
 %% rgb2MatlabColor.m
 %
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
 %  Date:     22. February 2010
 %  Version:  10.02.22.13
 %

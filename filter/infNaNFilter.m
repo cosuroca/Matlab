@@ -1,6 +1,6 @@
 %% infNaNFilter.m
 %
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
 %  Date:     26. November 2009
 %  Version:  09.11.26.13
 %

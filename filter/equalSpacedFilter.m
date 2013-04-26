@@ -1,6 +1,6 @@
 %% equalSpacedFilter.m
 %
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
 %  Date:     28. Januar 2010
 %  Version:  10.01.28.13
 %

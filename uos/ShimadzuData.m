@@ -1,5 +1,6 @@
-%% ShimadzuData.m 
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
+%% ShimadzuData.m
+%
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
 %  Date:     24. April 2013
 %  Version:  13.04.24.20
 %

@@ -1,6 +1,6 @@
 %% Pro8000.m
 %
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
 %  Date:     18. October 2011
 %  Version:  11.10.18.10
 %

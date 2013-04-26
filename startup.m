@@ -1,5 +1,6 @@
 %% startup.m Matlab startup file
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
+%
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
 %  Date:     24. April 2013
 %  Version:  13.04.24.19
 %

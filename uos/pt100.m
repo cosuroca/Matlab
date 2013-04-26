@@ -1,6 +1,6 @@
 %% pt100.m
 %
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
 %  Date:     10. October 2009
 %  Version:  09.10.10.21
 %

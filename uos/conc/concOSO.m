@@ -1,6 +1,6 @@
 %% concOSO.m
 %
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
 %  Date:     06. August 2010
 %  Version:  10.08.06.10
 %

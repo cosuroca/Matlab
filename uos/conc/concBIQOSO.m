@@ -1,6 +1,6 @@
 %% concBIQOSO.m
 %
-%  Author:   Sebastian Eicke (sebastianeicke@web.de)
+%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
 %  Date:     28. July 2011
 %  Version:  11.07.28.12
 %
