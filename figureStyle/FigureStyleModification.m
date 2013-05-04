@@ -1,12 +1,14 @@
-%% FigureStyleModification Modifies the FigureStyle.mat
-%  This file is part of FigureStyle.
+% FIGURESTYLEMODIFICATION
 %
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     17. April 2012
-%  Version:  12.04.17.14
+%   Modifies the FigureStyle.mat
+%   This file is part of FigureStyle.
 %
 
-%% Code
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 17. April 2012
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : FigureStyleModification.m
+
 clear all;
 close all;
 clc;

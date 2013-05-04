@@ -1,21 +1,21 @@
-%% concPYSO.m
-%
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     14. February 2012
-%  Version:  12.02.14.10
-%
-%  Description: Calculate the concentration of a [Ru(bpy)_2(pySO)](PF_6)_2 solution
-%
-%% Input
-%	 m    mass of [Ru(bpy)_2(pySO)](PF_6)_2 pulver (mg)
-%	 V    volume of solvent (ml)
-%
-%% Output:
-%    c    concentration of the solution (mol/l)
-%    dc   concentration error
-%
-%% Code
 function [ ] = concPYSO( m, V )
+% CONCPYSO 
+% 
+%   Calculates the concentration of a [Ru(bpy)_2(pySO)](PF_6)_2 solution
+%
+%   Inputs:
+%     m    mass of [Ru(bpy)_2(pySO)](PF_6)_2 pulver (mg)
+%     V    volume of solvent (ml)
+%
+%   Outputs:
+%     c    concentration of the solution (mol/l)
+%     dc   concentration error (mol/l)
+%
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 14. February 2012
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : concPYSO.m
 
 M = 886.64;       % molar mass of [Ru(bpy)_2(pySO)](PF_6)_2 (g/mol)
 deltam = 0.1;   % (mg)

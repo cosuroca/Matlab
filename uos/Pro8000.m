@@ -1,17 +1,18 @@
-%% Pro8000.m
+classdef Pro8000 < handle
+% PRO8000
 %
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     18. October 2011
-%  Version:  11.10.18.10
+%   Object for handling the Pro8000 temperature control
 %
-%  Description: Object for handling the Pro8000 temperature control
+%   Inputs for constructor:
+%     gpibAdress     GPIB adress, e.g. 2
+%     verbose        (optional) verbose commands read or written on serial port
 %
-%% Input for constructor
-%    gpibAdress     GPIB adress, e.g. 2
-%    verbose        (optional) verbose commands read or written on serial port
-%
-%% Code
-classdef pro8000 < handle
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 17. April 2012
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : Pro8000.m
+
     properties (Access = private)
         gpibPort;
         slot;

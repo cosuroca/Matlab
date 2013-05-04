@@ -1,22 +1,22 @@
-%% concOSOSugar.m
-%
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     27. May 2011
-%  Version:  11.05.26.15
-%
-%  Description: Calculate the concentration of a [Ru(bpy)_2(OSO)]PF_6 in a sugar glass
-%
-%% Input
-%    m            mass of [Ru(bpy)_2(OSO)]PF_6 pulver (mg)
-%    m_sugar      mass of sugar (mg)
-%    m_trehalose  mass of trehalose (mg)
-%
-%% Output:
-%    c    concentration of the solution (mol/l)
-%    dc   concentration error
-%
-%% Code
 function [ ] = concOSOSugar( m, m_trehalose, m_sugar )
+% CONCOSOSUGAR
+% 
+%   Calculates the concentration of a [Ru(bpy)_2(OSO)]PF_6 in a sugar glass
+%
+%   Inputs:
+%     m            mass of [Ru(bpy)_2(OSO)]PF_6 pulver (mg)
+%     m_sugar      mass of sugar (mg)
+%     m_trehalose  mass of trehalose (mg)
+%
+%   Outputs:
+%     c    concentration of the solution (mol/l)
+%     dc   concentration error (mol/l)
+%
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 27. May 2011
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : concOSOSugar.m
 
 M = 741.61;     % molar mass of [Ru(bpy)_2(OSO)]PF_6 (g/mol)
 deltam = 0.1;   % (mg)

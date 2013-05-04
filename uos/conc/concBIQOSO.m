@@ -1,23 +1,23 @@
-%% concBIQOSO.m
-%
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     28. July 2011
-%  Version:  11.07.28.12
-%
-%  Description: Calculate the concentration of a [Ru(bpy)(biq)(OSO)]PF_6 solution
-%               [Ru(N_2C_10H_8)(N_2C_18H_12)(SOCH_3)(C_6H_4CO_2)]PF_6
-%               [Ru N_4 C_36 H_27 SO_3 PF_6
-%
-%% Input
-%	 m    mass of [Ru(bpy)(biq)(OSO)]PF_6 pulver (mg)
-%	 V    volume of solvent (ml)
-%
-%% Output:
-%    c    concentration of the solution (mol/l)
-%    dc   concentration error
-%
-%% Code
 function [ ] = concBIQOSO( m, V )
+% CONCBIQOSO
+% 
+%   Calculates the concentration of a [Ru(bpy)(biq)(OSO)]PF_6 solution
+%   [Ru(N_2C_10H_8)(N_2C_18H_12)(SOCH_3)(C_6H_4CO_2)]PF_6
+%   [Ru N_4 C_36 H_27 SO_3 PF_6
+%
+%   Inputs:
+%     m    mass of [Ru(bpy)(biq)(OSO)]PF_6 pulver (mg)
+%     V    volume of solvent (ml)
+%
+%   Outputs:
+%     c    concentration of the solution (mol/l)
+%     dc   concentration error (mol/l)
+%
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 28. July 2011
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : concBIQOSO.m
 
 M=841.72;       % molar mass of [Ru(biq)(bpy)(OSO)]PF_6 (g/mol)
 deltam = 0.1;   % (mg)

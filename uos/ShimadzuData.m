@@ -1,13 +1,19 @@
-%% ShimadzuData.m
-%
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     24. April 2013
-%  Version:  13.04.24.20
-%
-%  Description: Load and process transmission data from Shimadzu UVProbe data files
-%
-%% Code
 classdef ShimadzuData < handle
+% SHIMADZUDATA
+%
+%   Loads and processes transmission data from Shimadzu UVProbe data files
+%
+%   Inputs for constructor:
+%     filename       filename of the UV Probe data file
+%     thickness      interaction length
+%     dt             time base for repetition measurement
+%
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 24. April 2013
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : ShimadzuData.m
+
     properties (Access = public)
         wavelength;
         transmission;

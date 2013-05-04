@@ -1,10 +1,13 @@
-%% startup.m Matlab startup file
+% STARTUP
 %
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     24. April 2013
-%  Version:  13.04.24.19
+%   Matlab startup file
 %
-%% Code
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 24. April 2013
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : startup.m
+
 close all;
 clear all;
 clc;

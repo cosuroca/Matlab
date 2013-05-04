@@ -1,17 +1,20 @@
-%% ptX.m
-%
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     13. April 2010
-%  Version:  10.04.13.12
-%
-%  Description: Calculate temperature out of specified resistance of each PtX element
-%
-%% Input
-%    R   resistance of a PtX element (ohm)
-%    RO  X=100 or 1000, addicted to the PtX element
-%
-%% Code
 function [T] = ptX(R, R0)
+% PTX
+% 
+%   Calculates the temperature out of a specified resistance of a PtX element
+%
+%   Inputs:
+%     R   resistance of a PtX element (ohm)
+%     RO  =100 or 1000, addicted to the PtX element
+%
+%   Outputs:
+%	  T    temperature (°C)
+%
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 13. April 2010
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : ptX.m
 
 if R>R0
     A = 3.9083E-3;  % 1/°C

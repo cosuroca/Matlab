@@ -1,16 +1,17 @@
-%% wavelength2Wavenumber.m
-%
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     06. July 2011
-%  Version:  11.07.06.16
-%
-%% Input
-%	 lambda  Wavelength (nm)
-%
-%% Output:
-%    nu      Wavenumber (cm^-1)
-%
-%% Code
 function [nu] = wavelength2Wavenumber(lambda)
+% WAVELENGTH2WAVENUMBER
+%
+%   Inputs:
+%     lambda  Wavelength (nm)
+%
+%   Outputs:
+%     nu      Wavenumber (cm^-1)
+%
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 06. July 2011
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : wavenumber2Wavelength.m
+
 
 nu = 1./(lambda.*1e-9.*100);

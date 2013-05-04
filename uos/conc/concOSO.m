@@ -1,21 +1,21 @@
-%% concOSO.m
-%
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     06. August 2010
-%  Version:  10.08.06.10
-%
-%  Description: Calculate the concentration of a [Ru(bpy)_2(OSO)]PF_6 solution
-%
-%% Input
-%	 m    mass of [Ru(bpy)_2(OSO)]PF_6 pulver (mg)
-%	 V    volume of solvent (ml)
-%
-%% Output:
-%    c    concentration of the solution (mol/l)
-%    dc   concentration error
-%
-%% Code
 function [ ] = concOSO( m, V )
+% CONCOSO
+% 
+%   Calculates the concentration of a [Ru(bpy)_2(OSO)]PF_6 solution
+%
+%   Inputs:
+%     m    mass of [Ru(bpy)_2(OSO)]PF_6 pulver (mg)
+%     V    volume of solvent (ml)
+%
+%   Outputs:
+%     c    concentration of the solution (mol/l)
+%     dc   concentration error (mol/l)
+%
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 06. August 2010
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : concOSO.m
 
 M=741.61;       % molar mass of [Ru(bpy)_2(OSO)]PF_6 (g/mol)
 deltam = 0.1;   % (mg)

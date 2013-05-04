@@ -1,13 +1,21 @@
-%% infNaNNullFilter.m
-%
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     26. November 2009
-%  Version:  09.11.26.13
-%
-%  Description: Filter for Inf-, NaN and Null Values
-%
-%% Code
 function [ x, y ] = infNaNNullFilter( x, y )
+% INFNANNULLFILTER
+%
+%   Filters Inf, NaN and NULL values out of y
+%
+%   Inputs:
+%     x        corresponding x values
+%     y        y values
+%
+%   Outputs:
+%     xe       corresponding x values
+%     ye       filtered y values
+%
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 26. November 2009
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : infNaNNullFilter.m
 
 if length(x) ~= length(y(:, 1))
     error('vectors have not the same length');

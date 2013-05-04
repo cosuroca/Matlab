@@ -1,11 +1,13 @@
-%% printCommandWindowLine.m Print line in Command Window
+function printCommandWindowLine()
+% PRINTCOMMANDWINDOWLINE
 %
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     28. January 2012
-%  Version:  12.01.28.16
+%   Print line in Command Window
 %
-%% Code
-function [] = printCommandWindowLine()
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 28. January 2012
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : printCommandWindowLine.m
 
 cws = get(0, 'CommandWindowSize');
 fprintf(strcat(char(ones(1,cws(1)).*45),'\n'));

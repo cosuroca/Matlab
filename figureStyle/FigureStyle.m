@@ -1,34 +1,32 @@
-%% FigureStyle.m Applies a style guide to the given figure.
-%  This file is part of FigureStyle.
-%
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     17. April 2012
-%  Version:  12.04.17.14
-%
-%  Description: Corrects the Ticks on linear scaled axes to have the same number of
-%               significant digits for all ticks (0, 0.5, 1) -> (0.0, 0.5, 1.0)
-%
-%               Corrects digital divider from '.' to ',' if initialized with 'de' as
-%               language. (Thx to Alexander Niemer)
-%
-%               Style guide is loaded from figureStyle.mat (must be in the system path)
-%
-% (based upon FigureStyle.m from Volker Dieckmann)
-%
-%% Requirements
-% FigureStyle.mat
-% eps2pdf.m by Primoz Cermelj
-%  (http://www.mathworks.com/matlabcentral/fileexchange/5782-eps2pdf)
-% fixPSlinestyle by Jiro Doke, The MathWorks
-%  (http://www.mathworks.com/matlabcentral/fileexchange/17928-fixpslinestyle)
-%
-%% Input for constructor
-%    figureHandle handle for figure to be styled
-%    language     (optional) 'en' default, possible: 'de'
-%    verbose      (optional) verbose commands read or written on serial port
-%
-%% Code
 classdef FigureStyle < handle
+% FIGURESTYLE
+%
+%   Applies a style guide to the given figure.
+%   This file is part of FigureStyle.
+%
+%   Corrects the Ticks on linear scaled axes to have the same number of
+%   significant digits for all ticks (0, 0.5, 1) -> (0.0, 0.5, 1.0)
+%   Corrects digital divider from '.' to ',' if initialized with 'de' as
+%   language. (Thx to Alexander Niemer)
+%   Style guide is loaded from figureStyle.mat (must be in the system path)
+%   (based upon FigureStyle.m from Volker Dieckmann)
+%
+%   Requirements:
+%     FigureStyle.mat
+%     eps2pdf.m by Primoz Cermelj (http://www.mathworks.com/matlabcentral/fileexchange/5782-eps2pdf)
+%     fixPSlinestyle by Jiro Doke, The MathWorks (http://www.mathworks.com/matlabcentral/fileexchange/17928-fixpslinestyle)
+%
+%   Inputs for constructor:
+%     figureHandle handle for figure to be styled
+%     language     (optional) 'en' default, possible: 'de'
+%     verbose      (optional) verbose commands read or written on serial port
+%
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 17. April 2012
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : FigureStyle.m
+
 	properties (Access = private)
         figureHandle;
         styleList;

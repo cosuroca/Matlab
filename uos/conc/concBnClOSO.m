@@ -1,21 +1,21 @@
-%% concOSO.m
-%
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     23. February 2010
-%  Version:  10.02.23.13
-%
-%  Description: Calculate the concentration of a [Ru(bpy)_2(BnClOSO)]PF_6 solution
-%
-%% Input
-%	 m    mass of [Ru(bpy)_2(BnClOSO)]PF_6 pulver (mg)
-%	 V    volume of solvent (ml)
-%
-%% Output:
-%    c    concentration of the solution (mol/l)
-%    dc   concentration error
-%
-%% Code
 function [ ] = concBnClOSO( m, V )
+% CONCBNCLOSO
+% 
+%   Calculates the concentration of a [Ru(bpy)_2(BnClOSO)]PF_6 solution
+%
+%   Inputs:
+%     m    mass of [Ru(bpy)_2(BnClOSO)]PF_6 pulver (mg)
+%     V    volume of solvent (ml)
+%
+%   Outputs:
+%     c    concentration of the solution (mol/l)
+%     dc   concentration error (mol/l)
+%
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 23. February 2010
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : concBnClOSO.m
 
 M=852.2;        % molar mass of [Ru(bpy)_2(BnClOSO)]PF_6 (g/mol)
 deltam = 0.1;   % (mg)

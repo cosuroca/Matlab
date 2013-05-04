@@ -1,27 +1,27 @@
-%% equalSpacedFilter.m
-%
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     28. Januar 2010
-%  Version:  10.01.28.13
-%
-%  Description: Sorts the pairs of (x,y) values and return only (x,y) that are nearly
-%  equal distributed with distances dx on the x scale.
-%  xe will consist of each first x that fullfills the rule: x(i-1)+dx<=x(i),
-%  plus the lowest and the highest value of x,
-%  plus every extra data pairs if abs(y(i-1)-y(i))>dy.
-%
-%% Input:
-%    x        non-uniform distributed and unsorted x values
-%    y        corresponding y values
-%    dx       desired distance of equally distributed value pairs
-%    dy       (optional) maximum distance on y-axis between two filtered data points
-%
-%% Output:
-%    xe       sorted x values (asc) with at most equal distance d
-%    ye       corresponding y values
-%
-%% Code
 function [xe,ye] = equalSpacedFilter(x,y,dx,dy)
+% EQUALSPACEDFILTER
+%
+%   Sorts the pairs of (x,y) values and return only (x,y) that are nearly
+%   equal distributed with distances dx on the x scale.
+%   xe will consist of each first x that fullfills the rule: x(i-1)+dx<=x(i),
+%   plus the lowest and the highest value of x,
+%   plus every extra data pairs if abs(y(i-1)-y(i))>dy.
+%
+%   Inputs:
+%     x        non-uniform distributed and unsorted x values
+%     y        corresponding y values
+%     dx       desired distance of equally distributed value pairs
+%     dy       (optional) maximum distance on y-axis between two filtered data points
+%
+%   Outputs:
+%     xe       sorted x values (asc) with at most equal distance d
+%     ye       corresponding y values
+%
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 28. January 2010
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : equalSpacedFilter.m
 
 if nargin<3, % too less arguments
     error('Three arguments required: x, y, dx')

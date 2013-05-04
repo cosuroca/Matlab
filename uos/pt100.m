@@ -1,21 +1,18 @@
-%% pt100.m
-%
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     10. October 2009
-%  Version:  09.10.10.21
-%
-%  Description: Calculate the temperature out of a specified resistance of a Pt100 element
-%
-%% Input
-%	 m    mass of [Ru(bpy)_2(OSO)]PF_6 pulver (mg)
-%	 V    volume of solvent (ml)
-%
-%% Output:
-%    c    concentration of the solution (mol/l)
-%    dc   concentration error
-%
-%% Code
 function [ T ] = pt100( R )
+% PT100
+% 
+%   Calculates the temperature out of a specified resistance of a Pt100 element
+%
+%   Inputs:
+%     R   resistance of a Pt100 element (ohm)
+%
+%   Outputs:
+%	  T    temperature (°C)
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 10. October 2009
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : pt100.m
 
 A = 3.9083E-3;
 B = -5.775E-7;

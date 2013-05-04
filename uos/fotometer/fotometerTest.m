@@ -1,12 +1,14 @@
-%% fotometerTest.m
-%
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%  Date:     26.04.2013
-%  Version:  2013.04.26.15
-%
-%  Description: Test rountine for Fotometer
-%
 %% Code
+% FOTOMETERTEST
+%
+%    Test rountine for Fotometer
+%
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% DATE      : 26. April 2013
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : fotometerTest.m
+
 clear all
 close all
 clc

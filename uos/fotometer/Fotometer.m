@@ -1,19 +1,20 @@
-%% Fotometer.m
-%
-%  Author:   Sebastian Eicke (sebastian.eicke@gmail.com)
-%            Volker Dieckmann
-%  Date:     26.04.2013
-%  Version:  2013.04.26.15
-%
-%  Description: Object for handling the fotometer by Elektronikwerkstatt Osnabrueck
-%
-%% Input for constructor
-%    com            COM port, e.g. 'COM1'
-%    diodes         number of diode slots the fotometer is equiped with, in most cases 4
-%    verbose        (optional) verbose commands read or written on serial port
-%
-%% Code
 classdef Fotometer < handle
+% FOTOMETER
+%
+%   Object for handling the fotometer by Elektronikwerkstatt Osnabrueck
+%
+%   Input for constructor:
+%     com            COM port, e.g. 'COM1'
+%     diodes         number of diode slots the fotometer is equiped with, in most cases 4
+%     verbose        (optional) verbose commands read or written on serial port
+%
+
+%% AUTHOR    : Sebastian Eicke (sebastian.eicke@gmail.com)
+%% AUTHOR    : Volker Dieckmann
+%% DATE      : 26. April 2013
+%% DEVELOPED : 8.1.0.604 (R2013a)
+%% FILENAME  : Fotometer.m
+
     properties (Access = private)
         ser;
         diodeRanges;
