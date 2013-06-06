@@ -19,7 +19,7 @@ if ismac
     macName = deblank(macName);
     
     if strcmp(macName, 'seiBook.local')		% Macbook
-		homeDir = '/Users/seicke/Dropbox/Code/Matlab/'
+		homeDir = '/Users/seicke/Dropbox/Code/Matlab/';
 	end
 	
 	if strcmp(macName, 'seiMac.local')		% iMac
