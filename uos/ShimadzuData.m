@@ -14,18 +14,21 @@ classdef ShimadzuData < handle
 %% DEVELOPED : 8.1.0.604 (R2013a)
 %% FILENAME  : ShimadzuData.m
 
-    properties (Access = public)
-        wavelength;
-        transmission;
-        absorption;
+    properties (Access = private)
+        wavelength;                     % wavelength, saved normally in (nm)
+        transmission;                   % transmission (%)
+        absorption;                     % absorption (cm^-1)
         repititionMeausrement;
-        repititionNumber;
-        repititionTimes;
+        repititionNumber;               % number of meausurement
+        repititionTimes;                % point of times
     end
 
     methods
 
         %% constructor
+        %     filename       filename of the UV Probe data file
+        %     thickness      interaction length
+        %     dt             time base for repetition measurement
         function ShimadzuData = ShimadzuData(fileName, thickness, dt)
             if nargin < 3
                 dt = 100;
@@ -63,57 +66,68 @@ classdef ShimadzuData < handle
         function delete(ShimadzuData)
         end
 
+        %% get wavelength
         function wavelengthVector = getWavelength(ShimadzuData)
             wavelengthVector = ShimadzuData.wavelength;
         end
 
+        %% get transmission
         function transmissionMatrix = getTransmission(ShimadzuData)
             transmissionMatrix = ShimadzuData.transmission;
         end
 
-        function absorptionMatrix = getAborption(ShimadzuData)
+        %% get absorption
+        function absorptionMatrix = getAbsorption(ShimadzuData)
             absorptionMatrix = ShimadzuData.absorption;
         end
         
-        function absorption = getAborptionForWavelength(ShimadzuData, lambda)
+        %% get absorption for specified wavelength
+        function absorption = getAbsorptionForWavelength(ShimadzuData, wavelength)
             absorption = ShimadzuData.getAbsorption();
-            absorption = absorption(find(ShimadzuData.getWavelength() == lambda), :)';
+            absorption = absorption(find(ShimadzuData.getWavelength() == wavelength), :)';
         end
 
+        %% 1 if data set represents a repetition meausurement, else 0
         function boolean = isRepititionMeausrement(ShimadzuData)
             boolean = ShimadzuData.repititionMeausrement;
         end
 
+        %% get number of measurements
         function repNumber = getRepititionNumber(ShimadzuData)
             repNumber = ShimadzuData.repititionNumber;
         end
 
+        %% get point of times for the meausurements
         function repTimes = getRepititionTimes(ShimadzuData)
             repTimes = ShimadzuData.repititionTimes;
         end
         
+        %% get 3D matrix data of the absorption
         function [WAVELENGTH, TIMES, ABS] = get3DAbs(ShimadzuData)
             if ~ShimadzuData.isRepititionMeausrement()
                 error('no 3D data available');
             end
             
-            [WAVELENGTH TIMES] = meshgrid(ShimadzuData.getWavelength, ShimadzuData.getRepititionTimes);
-            ABS = ShimadzuData.getAborption';
+            [WAVELENGTH, TIMES] = meshgrid(ShimadzuData.getWavelength, ShimadzuData.getRepititionTimes);
+            ABS = ShimadzuData.getAbsorption';
         end
         
+        %% expand data set with another data set
+        %     filename       filename of the UV Probe data file
+        %     thickness      interaction length
+        %     dt             time base for repetition measurement
+        %     d0             time offset of the original and expanded data set
         function expand(ShimadzuData, fileName, thickness, dt, t0)
             
             file = importdata(fileName);
-            if isstruct(file)                                                   % Keine WDH Messung
+            if isstruct(file)                                                   % No repetition measurement
                 fileData = file.data;
-            else                                                                % WDH Messung
+            else                                                                % repetitioin measurement
                 fileData = file;
             end
             
-            if (length(ShimadzuData.wavelength) ~= length(fileData(:,1))   && ...% Wellenlängenvektoren gleich?
-                ShimadzuData.wavelength(1) ~= fileData(1,1)        && ...
-                ShimadzuData.wavelength(end) ~= fileData(end,1))
-                error('wavelength vectors have not the same length');
+            if ShimadzuData.getWavelength() ~= fileData(:,1)
+                error('%s has not the same wavelength range!', fileName);
             end
             
             if ShimadzuData.isRepititionMeausrement
@@ -141,6 +155,7 @@ classdef ShimadzuData < handle
 
     methods(Access = private)
 
+        % Deletes Inf, NaN and Null in yData and the corrsponding elements in xData
         function [xData yData] = InfNaNNullFilter (ShimadzuData, xData, yData)
             indexinfs = find(isinf(yData(:, 1)) == 1);
             xData(indexinfs) = [];
