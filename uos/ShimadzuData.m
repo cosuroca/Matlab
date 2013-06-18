@@ -126,7 +126,7 @@ classdef ShimadzuData < handle
                 fileData = file;
             end
             
-            if ShimadzuData.getWavelength() ~= fileData(:,1)
+            if ~isequal(ShimadzuData.getWavelength(), fileData(:,1))
                 error('%s has not the same wavelength range!', fileName);
             end
             
