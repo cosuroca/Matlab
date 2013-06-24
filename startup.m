@@ -34,7 +34,7 @@ if ispc
 	pcName = getenv('COMPUTERNAME');
 	
 	if strcmp(pcName, 'SEWORK')		% @Work
-		homeDir = 'D:/Dropbox/Uni/Postdoc/';
+		homeDir = 'C:/Users/Sebastian Eicke/Dropbox/Code/Matlab';
     end
 end
 
